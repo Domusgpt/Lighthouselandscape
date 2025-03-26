@@ -237,14 +237,17 @@
         
         .logo-text h1 {
             font-size: 1.5rem;
-            margin: 0;
+            margin: 0 auto;
             color: var(--blue-primary);
+            text-align: center;
         }
         
         .logo-text span {
             font-size: 0.85rem;
             color: var(--text-muted);
             font-weight: 400;
+            display: block;
+            text-align: center;
         }
         
         .nav-toggle {
@@ -384,15 +387,17 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s ease forwards 0.5s;
+            text-align: center;
         }
         
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s ease forwards 0.8s;
+            text-align: center;
         }
         
         .hero-buttons {
@@ -401,6 +406,8 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s ease forwards 1.1s;
+            justify-content: center;
+            margin: 0 auto;
         }
         
         @keyframes fadeInUp {
@@ -877,21 +884,24 @@
             justify-content: center;
         }
         
-        .author-image {
+        .author-icon {
             width: 70px;
             height: 70px;
             border-radius: 50%;
-            overflow: hidden;
             margin-right: 15px;
             border: 3px solid var(--accent);
-            padding: 3px;
+            background-color: var(--blue-primary);
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4rem;
         }
         
-        .author-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
+        .author-icon span {
+            display: block;
+            text-align: center;
         }
         
         .author-info h4 {
@@ -1605,11 +1615,11 @@
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-image">
-                        <img src="https://i.imgur.com/icDnVrd.jpeg" alt="Window Washing">
+                        <img src="https://i.imgur.com/icDnVrd.jpeg" alt="Stone Installation/Replenishment">
                     </div>
                     <div class="service-content">
-                        <h3>Window Washing</h3>
-                        <p>Professional window cleaning services for residential properties, including specialty services for hard-to-reach windows and glass features.</p>
+                        <h3>Stone Installation/Replenishment</h3>
+                        <p>Expert stone installation and replenishment services to enhance your outdoor spaces with natural textures and elegant hardscaping elements.</p>
                         <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -1626,8 +1636,8 @@
                     <div class="testimonial-content active" data-testimonial="1">
                         <p class="testimonial-text">One of the absolute best bespoke maintenance and stewardship experts for outdoor coastal yard scaping and care there is. Renee has 30 years experience as one of the first landscaping companies on the north end of the island and she can either help you or find you the right locals who can. Ask her about landscape lighting or how to keep something beautiful as beautiful as you see it in your dreams.</p>
                         <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="/api/placeholder/60/60" alt="Paul Phillips">
+                            <div class="author-icon">
+                                <span>PP</span>
                             </div>
                             <div class="author-info">
                                 <h4>Paul Phillips</h4>
@@ -1640,8 +1650,8 @@
                     <div class="testimonial-content" data-testimonial="2">
                         <p class="testimonial-text">Phenomenal work with such quick turn over! They completely know how to see a space and make it pop by adding stone, multiple colors for dimension from florals, and more! Very great work and great people!</p>
                         <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="/api/placeholder/60/60" alt="Sophia Amiano">
+                            <div class="author-icon">
+                                <span>SA</span>
                             </div>
                             <div class="author-info">
                                 <h4>Sophia Amiano</h4>
@@ -1654,8 +1664,8 @@
                     <div class="testimonial-content" data-testimonial="3">
                         <p class="testimonial-text">Fair prices.</p>
                         <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="/api/placeholder/60/60" alt="Dakota Griffin">
+                            <div class="author-icon">
+                                <span>DG</span>
                             </div>
                             <div class="author-info">
                                 <h4>Dakota Griffin</h4>
